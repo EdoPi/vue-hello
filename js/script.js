@@ -4,7 +4,20 @@ var app = new Vue({
   el: '#root',
   data: {
     message: 'Questo esercizio era veramente tosto!!!!!!',
+    titleClass: 'title',
+    buttonText:'CAMBIAMI',
+  },
+  methods:{
+    changeTitle: function(){
+      if (this.buttonText === 'CAMBIAMI') {
+        this.titleClass = 'change-title';
+        this.buttonText = 'RESET';
+      } else {
+        this.titleClass = 'title';
+        this.buttonText = 'CAMBIAMI';
+      }
 
+    },
   }
 });
 

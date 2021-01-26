@@ -1,0 +1,10 @@
+.title{
+  color: red;
+}
+
+.change-title{
+  font-size: 70px;
+  font-style: italic;
+  font-weight: bold;
+  color: blue;
+}

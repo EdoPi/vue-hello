@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title></title>
   </head>
   <body>
@@ -14,8 +15,8 @@
       <div v-bind:style="'background:' + color + ';width:100px; height:100px;'">
         <img :src="" alt="">
       </div>      -->
-      <h1>{{message}}</h1>
-
+      <h1 :class="titleClass">{{message}}</h1>
+      <button @click="changeTitle" type="button" name="button">{{buttonText}}</button>
     </div>
 
     <script src="js/script.js" charset="utf-8"></script>
