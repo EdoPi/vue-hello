@@ -18,6 +18,10 @@ var app = new Vue({
       }
 
     },
+    reverseTitle: function(){
+      return this.message = this.message.split("").reverse().join("");
+
+    }
   }
 });
 
